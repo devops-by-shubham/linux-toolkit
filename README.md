@@ -5,49 +5,68 @@ A curated collection of Bash scripts to automate the installation and setup of c
 ---
 
 ## 📁 Repository Structure
+
 .
 ├── scripts/
 │ ├── ansible.sh
+│ ├── awscli.sh
+│ ├── azurecli.sh
 │ ├── boto3.sh
 │ ├── disk-usage-report.sh
+│ ├── docker.sh
+│ ├── docker-compose.sh
+│ ├── eksctl.sh
 │ ├── fail2ban.sh
-│ ├── grafana.sh
 │ ├── golang.sh
+│ ├── grafana.sh
 │ ├── helm.sh
 │ ├── htop.sh
+│ ├── jenkins.sh
+│ ├── jfrog.sh
 │ ├── jq.sh
+│ ├── k8s-setup-kubeadm.sh
+│ ├── kubectl.sh
+│ ├── maven.sh
 │ ├── minikube.sh
+│ ├── mysql.sh
 │ ├── net-tools.sh
 │ ├── nodejs.sh
 │ ├── openjdk.sh
 │ ├── prometheus.sh
 │ ├── rust.sh
+│ ├── sonarqube.sh
+│ ├── terraform.sh
 │ ├── tree.sh
-│ └── ufw.sh
+│ ├── trivy.sh
+│ ├── ufw.sh
 └── README.md
+
 
 ---
 
 ## 📦 Categories & Tools
 
-| Category        | Tools                                           |
-|----------------|--------------------------------------------------|
-| **System Utils**   | `htop`, `jq`, `net-tools`, `tree`, `disk-usage-report` |
-| **Languages**      | `python3 & boto3`, `nodejs`, `golang`, `openjdk`, `rust` |
-| **DevOps Tools**   | `ansible`, `helm`                             |
-| **Kubernetes**     | `minikube`                                    |
-| **Monitoring**     | `prometheus`, `grafana`                       |
-| **Security**       | `fail2ban`, `ufw`                             |
+| Category             | Tools                                                                 |
+|----------------------|-----------------------------------------------------------------------|
+| **System Utilities** | `htop`, `jq`, `net-tools`, `tree`, `disk-usage-report.sh`            |
+| **Languages**        | `python3 & boto3`, `golang`, `nodejs`, `openjdk`, `rust`, `maven`     |
+| **Databases**        | `mysql`                                                               |
+| **Security**         | `fail2ban`, `ufw`, `trivy`                                            |
+| **DevOps Tools**     | `ansible`, `terraform`, `jenkins`, `sonarqube`, `jfrog`, `docker-compose` |
+| **Monitoring/Logging**| `prometheus`, `grafana`                                              |
+| **Containers & K8s** | `docker`, `minikube`, `kubectl`, `helm`, `k8s-setup-kubeadm.sh`, `eksctl` |
+| **Cloud CLIs**       | `awscli`, `azurecli`                                                  |
 
 ---
 
 ## 🚀 Usage
 
-Run scripts individually:
+Run any script directly:
 
 ```bash
-chmod +x scripts/htop.sh
-./scripts/htop.sh
+chmod +x scripts/docker.sh
+./scripts/docker.sh
+
 
 ## Or create a wrapper to run multiple setups in a row (optional).
 
