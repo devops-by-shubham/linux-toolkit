@@ -85,7 +85,8 @@ What does set -euo pipefail mean?
 -o pipefail: Return the exit status of the last command in a pipeline that failed (if any), instead of the status of the final command.
 
 Together, these flags make the scripts more robust and predictable by catching failures and undefined variables early.
-
+This is for Ubuntu based systems (apt repo)
+If using AWS Linux, Centos or any yum repo based system, then modify accordingly
 
 
 Most tools will not reinstall if already present.
